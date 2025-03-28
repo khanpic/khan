@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사진작가 포트폴리오</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+        .nanum-pen-script-regular {
+        font-family: "Nanum Pen Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .about {
+            margin: 30px 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .contact {
+            margin: 30px 0;
+        }
+        .contact a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .instagram { background-color: #E1306C; }
+        .email { background-color: #007bff; }
+        .kakao { background-color: #ffeb00; color: #3c1e1e; }
+
+        .name {
+            font-family: "Nanum Pen Script", cursive;
+            font-size: 56px;
+            font-style: italic;
+        }
+        /* Lightbox 스타일 */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 8px;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>📸Khan Snap📸</header>
+
+    <div class="container">
+        <section class="about">
+            <h2>안녕하세요!<br><br><name class = "name">"Khan(칸)"</name><br><br>입니다.</h2>
+            <p>인물, 스냅 전문으로 촬영합니다. 순간의 감정을 담아 기억에 남는 사진을 제공합니다.</p>
+        </section>
+
+        <section class="gallery">
+            <img src=".//포폴1.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴2.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴3.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴4.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴5.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴6.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴7.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴8.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴9.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴10.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴11.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴12.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴13.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴14.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴15.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴16.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴17.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴18.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴19.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴20.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)"> 
+            <img src=".//포폴21.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴22.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴23.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+            <img src=".//포폴24.jpg" alt="포트폴리오 이미지" onclick="openLightbox(this)">
+        </section>
+
+        <section class="contact">
+            <h2>문의하기</h2>
+            <a href="https://www.instagram.com/Khan_pic_" class="instagram">📷 Instagram</a>
+            <a href="Kashi579@naver.com" class="email">📩 Email</a>
+            <a href="https://open.kakao.com/o/sJg3e6nh" class="kakao">💬 KakaoTalk</a>
+        </section>
+    </div>
+    </div>
+
+    <!-- Lightbox 모달 -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="">
+    </div>
+
+    <script>
+        function openLightbox(imgElement) {
+            document.getElementById("lightbox-img").src = imgElement.src;
+            document.getElementById("lightbox").style.display = "flex";
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
