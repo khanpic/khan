@@ -1,1 +1,8 @@
-khansnap.shop
+; <<>> DiG 9.10.6 <<>> khansnap.shop +nostats +nocomments +nocmd
+;; global options: +cmd
+;WWW.khansnap.shop.			IN	A
+WWW.khansnap.shop.		7200	IN	CNAME	example.github.io.
+example.github.io.	3600	IN	A	185.199.110.153
+example.github.io.	3600	IN	A	185.199.111.153
+example.github.io.	3600	IN	A	185.199.109.153
+example.github.io.	3600	IN	A	185.199.108.153
